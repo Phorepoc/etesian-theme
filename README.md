@@ -1,0 +1,27 @@
+# Etesian theme
+
+The Etesian design language (the N9's look, re-envisioned) as a standard S60 theme for Symbian^3 and Phorepoc OS: dark colours, its own
+application icons and the Fira Sans typeface.
+
+- `skin/` the skin: `etesian-dark.txt` (UID E7016B31, a scalable skin), the screen and status-area backgrounds, `icons/` the 20 application icons
+  (SVG, `mapping.txt` = application UID to icon).
+- `fonts/` Fira Sans Light, Regular and Bold, unmodified, with the SIL OFL.
+- `tools/build_skin.py` compiles the skin with the pdk toolchain (`akn_skin_desc_compiler`, `mifconv`) into `.skn`, `.mif` and `.mbm`.
+  `gen_descriptor.py` and `gen_app_icons.py` are the maintainer tools that wrote the descriptor and the icon sources.
+
+## Where it is used
+
+- **Built into the Phorepoc OS images** (PC, phone): the pdk compiles the skin into the ROM, with the fonts in `Z:\resource\fonts`; the theme
+  is then selectable in Themes next to the stock ones. Nothing to install.
+- **A SIS for other phones** (`etesian-theme-arm.sis`, from the release page and Catalogue): the compiled skin only, no fonts and no shell.
+  Pick Etesian in Themes. Early; tested on Phorepoc images only so far.
+- **The Etesian shell** ([etesian-ui](https://github.com/Phorepoc/etesian-ui)) activates this theme when you choose the shell and puts the
+  previous theme back when you switch away.
+
+## Licences
+
+AGPL-3.0-only with additional terms (`LICENSE`, `ADDITIONAL-TERMS.md`, `NOTICE`); Fira Sans is SIL OFL 1.1 (`LICENSES/`). The skin descriptor follows the layout of the Symbian skin format (EPL-1.0); no artwork from the 2010 release is used.
+
+## History
+
+First commit of this repository: the skin, icons, fonts and tools of etesian-ui at its commit 25a4c01 (etesian-ui keeps the shell).

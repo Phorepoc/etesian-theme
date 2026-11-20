@@ -1,0 +1,1 @@
+Etesian theme: the Etesian design language as a standard theme (dark, with its own application icons)
