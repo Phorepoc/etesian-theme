@@ -20,7 +20,15 @@ application icons and the Fira Sans typeface.
 
 ## Licences
 
-AGPL-3.0-only with additional terms (`LICENSE`, `ADDITIONAL-TERMS.md`, `NOTICE`); Fira Sans is SIL OFL 1.1 (`LICENSES/`). The skin descriptor follows the layout of the Symbian skin format (EPL-1.0); no artwork from the 2010 release is used.
+AGPL-3.0-only (`LICENSE`), with the additional terms of `ADDITIONAL-TERMS.md`: the theme is derived from the
+[Etesian Design Language](https://github.com/Etesian-design/design) (its tokens, colours and icon glyphs), and carries the
+same terms as the upstream: the section 7(b) attribution "Etesian, founded by Kyriakos Bompotis", which must stay in the
+`NOTICE` and wherever a derived work shows its legal notices; section 7(e), the Etesian names and logos (`TRADEMARKS.md`);
+and the Phorepoc exception, under which the Phorepoc images and packages use it. Anyone else uses it under the AGPL.
+
+Fira Sans (`fonts/`) is SIL OFL 1.1, unmodified (`LICENSES/OFL-1.1.txt`). The skin descriptor follows the layout of the
+Symbian skin format (EPL-1.0); no artwork from the 2010 release is used. The SIS and the images install `LICENSES/` and
+`NOTICE` in `\resource\etesian\licences\`.
 
 ## History
 
