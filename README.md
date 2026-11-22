@@ -30,6 +30,15 @@ Fira Sans (`fonts/`) is SIL OFL 1.1, unmodified (`LICENSES/OFL-1.1.txt`). The sk
 Symbian skin format (EPL-1.0); no artwork from the 2010 release is used. The SIS and the images install `LICENSES/` and
 `NOTICE` in `\resource\etesian\licences\`.
 
+## Screenshots
+
+On Phorepoc OS (720 x 1440), with etesian-ui.
+
+| | | |
+|---|---|---|
+| ![The application grid](docs/screenshots/01-applications.png) | ![More application icons](docs/screenshots/02-applications-more.png) | ![Calculator in the theme](docs/screenshots/10-calculator-theme.png) |
+| The grid: the n9ish icons and ours | More icons | A stock application in the theme |
+
 ## History
 
 First commit of this repository: the skin, icons, fonts and tools of etesian-ui at its commit 25a4c01 (etesian-ui keeps the shell).
