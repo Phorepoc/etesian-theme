@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+# Copyright The Phorepoc Authors
+# SPDX-License-Identifier: AGPL-3.0-only
+"""gen_frames -- the 9-piece frames and the bar backgrounds of the Etesian skins, drawn as SVG-Tiny in the Etesian look (the squircle, a lit top edge,
+a rim) with an alpha plane everywhere (fill-opacity, read as the soft mask: the bar is translucent where a compositing window server blends it).
+
+The structure follows the reference skins' configuration (ClearBlack II for the frame families and colours, DarkForest for the masking: every piece has a
+mask, sides stretch); the art is ours. A frame is the 9 pieces in the order of the skin format: TL TR BL BR T B L R C; every piece is a 16 x 16 viewBox
+that the skin scales (corners) or stretches (sides, centre).
+    python3 tools/gen_frames.py            writes skin/frames/*.svg and skin/frames/frames.inc (appended to the descriptors by build_skin.py)
+"""
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.join(HERE, "..", "skin", "frames")
+K = 5.4          # the squircle corner: the Bezier handle of a 16 unit radius (a circle would be 7.2)
+S = 16
+RIM = 1.5
+
+# family -> style: fill / opacity, rim / opacity, top highlight (a lighter line just inside the top edge) / opacity
+STYLES = {
+    # the bottom bar and its buttons (guide 20-phone section 3: Back and the actions are lit squircles on a dark bar)
+    "SkButton":              dict(fill="2A2A2A", fo=1.0,  rim="505050", ro=1.0,  hi="FFFFFF", ho=0.16),
+    "SkButtonPressed":       dict(fill="1B3C70", fo=1.0,  rim="4591FF", ro=1.0,  hi="FFFFFF", ho=0.10),
+    "SkButtonCenter":        dict(fill="2A2A2A", fo=1.0,  rim="505050", ro=1.0,  hi="FFFFFF", ho=0.16),
+    "SkButtonCenterPressed": dict(fill="1B3C70", fo=1.0,  rim="4591FF", ro=1.0,  hi="FFFFFF", ho=0.10),
+    "FnButtonNormal":        dict(fill="2A2A2A", fo=1.0,  rim="505050", ro=1.0,  hi="FFFFFF", ho=0.16),
+    "FnButtonPressed":       dict(fill="1B3C70", fo=1.0,  rim="4591FF", ro=1.0,  hi="FFFFFF", ho=0.10),
+    "FnButtonInactive":      dict(fill="1C1C1C", fo=0.8,  rim="343434", ro=0.8,  hi="FFFFFF", ho=0.05),
+}
+
+# the skin frame item -> (our family)
+FRAMES = [
+    ("QgnFrSctrlSkButton", "SkButton"),
+    ("QgnFrSctrlSkButtonPressed", "SkButtonPressed"),
+    ("QgnFrSctrlSkButtonCenter", "SkButtonCenter"),
+    ("QgnFrSctrlSkButtonCenterPressed", "SkButtonCenterPressed"),
+    ("QsnFrFunctionButtonNormal", "FnButtonNormal"),
+    ("QsnFrFunctionButtonPressed", "FnButtonPressed"),
+    ("QsnFrFunctionButtonInactive", "FnButtonInactive"),
+]
+
+# bar backgrounds: scalable items, a translucent dark bar with a lighter top edge
+BARS = ["QsnBgAreaControl", "QsnBgAreaControlIdle", "QsnBgAreaControlMp", "QsnBgAreaControlPopup"]
+BAR = dict(fill="141414", fo=0.88, edge="3A3A3A", eo=1.0)
+
+
+def svg(body):
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" width="%d" height="%d" '
+            'viewBox="0 0 %d %d">\n%s</svg>\n' % (S, S, S, S, body))
+
+
+def rect(x, y, w, h, c, o):
+    return '<rect x="%g" y="%g" width="%g" height="%g" fill="#%s" fill-opacity="%g"/>\n' % (x, y, w, h, c, o)
+
+
+def corner(flip_x, flip_y, st):
+    """One corner piece: the quarter squircle filled, its rim along the curve, a highlight along the top (corners at the top)."""
+    def X(x): return S - x if flip_x else x
+    def Y(y): return S - y if flip_y else y
+    d = "M%g,%g C%g,%g %g,%g %g,%g L%g,%g Z" % (X(0), Y(S), X(0), Y(K), X(K), Y(0), X(S), Y(0), X(S), Y(S))
+    curve = "M%g,%g C%g,%g %g,%g %g,%g" % (X(0), Y(S), X(0), Y(K), X(K), Y(0), X(S), Y(0))
+    out = '<path d="%s" fill="#%s" fill-opacity="%g"/>\n' % (d, st["fill"], st["fo"])
+    out += '<path d="%s" fill="none" stroke="#%s" stroke-opacity="%g" stroke-width="%g"/>\n' % (curve, st["rim"], st["ro"], RIM)
+    if not flip_y:
+        curve2 = "M%g,%g C%g,%g %g,%g %g,%g" % (X(RIM * 1.6), Y(S), X(RIM * 1.6), Y(K + 1.5), X(K + 1.5), Y(RIM * 1.6), X(S), Y(RIM * 1.6))
+        out += '<path d="%s" fill="none" stroke="#%s" stroke-opacity="%g" stroke-width="1"/>\n' % (curve2, st["hi"], st["ho"])
+    return out
+
+
+def piece(name, st):
+    f, fo, r, ro = st["fill"], st["fo"], st["rim"], st["ro"]
+    base = rect(0, 0, S, S, f, fo)
+    if name == "tl": return corner(False, False, st)
+    if name == "tr": return corner(True, False, st)
+    if name == "bl": return corner(False, True, st)
+    if name == "br": return corner(True, True, st)
+    if name == "t": return base + rect(0, 0, S, RIM, r, ro) + rect(0, RIM * 1.6, S, 1, st["hi"], st["ho"])
+    if name == "b": return base + rect(0, S - RIM, S, RIM, r, ro)
+    if name == "l": return base + rect(0, 0, RIM, S, r, ro)
+    if name == "r": return base + rect(S - RIM, 0, RIM, S, r, ro)
+    return base                                       # c
+
+
+ORDER = ["tl", "tr", "bl", "br", "t", "b", "l", "r", "c"]
+
+
+def main():
+    os.makedirs(OUT, exist_ok=True)
+    inc = ["// generated by tools/gen_frames.py (AGPL-3.0-only): the frames and bar backgrounds, drawn in the Etesian look"]
+    done = set()
+    for iid, fam in FRAMES:
+        st = STYLES[fam]
+        lines = ["FRAME IID=%s" % iid]
+        for p in ORDER:
+            fn = "frames/%s_%s.svg" % (fam.lower(), p)
+            if fn not in done:
+                open(os.path.join(OUT, os.path.basename(fn)), "w", newline="\n").write(svg(piece(p, st)))
+                done.add(fn)
+            lines.append("\tc16 %s SOFTMASK" % fn)
+        lines.append("END")
+        inc.append("\n".join(lines))
+    # the bar background: one translucent strip (a lighter top edge), the same art for every bar variant
+    body = rect(0, 0, S, S, BAR["fill"], BAR["fo"]) + rect(0, 0, S, 1, BAR["edge"], BAR["eo"])
+    open(os.path.join(OUT, "bar.svg"), "w", newline="\n").write(svg(body))
+    for iid in BARS:
+        inc.append("SCALABLEITEM IID=%s INPUT=none OUTPUT=0/RGBA\n\tEFFECT UID=0x101F8748 INPUTA=none INPUTB=none OUTPUT=0/RGBA\n\t\t\tBMP f c16 frames/bar.svg SOFTMASK\n\t\t\tINT ms 0\n\t\tEND\nEND" % iid)
+    open(os.path.join(OUT, "frames.inc"), "w", newline="\n").write("\n".join(inc) + "\n")
+    print("frames:", len(FRAMES), "svgs:", len(done) + 1)
+
+
+if __name__ == "__main__":
+    main()
