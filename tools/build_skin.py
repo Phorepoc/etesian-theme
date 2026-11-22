@@ -42,7 +42,8 @@ def main(name, out):
     r = subprocess.run([which("mifconv"), os.path.join(tmp, name + ".mif"), "-T" + tmp, "-P" + os.path.join(tmp, "palette.pal"),
                         "-S" + os.path.dirname(os.environ["PHE_SVGTENC"]), "-F" + os.path.join(tmp, "list.txt")],
                        cwd=stage, capture_output=True, text=True, errors="replace")
-    print("\n".join(l for l in (r.stdout + r.stderr).splitlines() if not l.startswith("Loading"))[-600:])
+    print("mifconv rc", r.returncode)
+    print("\n".join(l for l in (r.stdout + r.stderr).splitlines() if not l.startswith("Loading") and "Error deleting" not in l)[-2500:])
     for ext in (".mif", ".mbm"):
         if os.path.isfile(os.path.join(tmp, name + ext)): shutil.copy(os.path.join(tmp, name + ext), out)
     ok = os.path.isfile(os.path.join(out, name + ".mif"))
