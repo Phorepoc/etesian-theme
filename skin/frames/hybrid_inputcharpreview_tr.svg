@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" width="16" height="16" viewBox="0 0 16 16">
+<path d="M16,16 C16,5.4 10.6,0 0,0 L0,16 Z" fill="#FFFFFF" fill-opacity="1"/>
+<path d="M16,16 C16,5.4 10.6,0 0,0" fill="none" stroke="#4591FF" stroke-opacity="1" stroke-width="1.5"/>
+<path d="M13.6,16 C13.6,6.9 9.1,2.4 0,2.4" fill="none" stroke="#FFFFFF" stroke-opacity="0" stroke-width="1"/>
+</svg>

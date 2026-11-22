@@ -18,7 +18,7 @@ def main(name, out):
     mp = os.path.join(stage, "icons", "mapping.txt")
     if os.path.isfile(mp):
         blocks = ""
-        inc = os.path.join(stage, "frames", "frames.inc")
+        inc = os.path.join(stage, "frames", ("dark" if name.endswith("dark") else "hybrid") + ".inc")
         if os.path.isfile(inc):
             blocks = "\n" + open(inc, encoding="utf-8").read() + "\n"        # the frames and bar backgrounds (tools/gen_frames.py)
         for line in open(mp, encoding="utf-8"):

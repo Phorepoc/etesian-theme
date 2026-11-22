@@ -18,26 +18,43 @@ S = 16
 RIM = 1.5
 
 # family -> style: fill / opacity, rim / opacity, top highlight (a lighter line just inside the top edge) / opacity
-STYLES = {
-    # the bottom bar and its buttons (guide 20-phone section 3: Back and the actions are lit squircles on a dark bar)
-    "SkButton":              dict(fill="2A2A2A", fo=1.0,  rim="505050", ro=1.0,  hi="FFFFFF", ho=0.16),
-    "SkButtonPressed":       dict(fill="1B3C70", fo=1.0,  rim="4591FF", ro=1.0,  hi="FFFFFF", ho=0.10),
-    "SkButtonCenter":        dict(fill="2A2A2A", fo=1.0,  rim="505050", ro=1.0,  hi="FFFFFF", ho=0.16),
-    "SkButtonCenterPressed": dict(fill="1B3C70", fo=1.0,  rim="4591FF", ro=1.0,  hi="FFFFFF", ho=0.10),
-    "FnButtonNormal":        dict(fill="2A2A2A", fo=1.0,  rim="505050", ro=1.0,  hi="FFFFFF", ho=0.16),
-    "FnButtonPressed":       dict(fill="1B3C70", fo=1.0,  rim="4591FF", ro=1.0,  hi="FFFFFF", ho=0.10),
-    "FnButtonInactive":      dict(fill="1C1C1C", fo=0.8,  rim="343434", ro=0.8,  hi="FFFFFF", ho=0.05),
+ACC = "4591FF"
+def lit(fill, rim, hi="FFFFFF", ho=0.16, fo=1.0, ro=1.0):
+    return dict(fill=fill, fo=fo, rim=rim, ro=ro, hi=hi, ho=ho)
+PRESSED = lit("1B3C70", ACC, ho=0.10)
+CHROME = {   # the bottom bar and its buttons, popups: dark in both skins (guide 20-phone: chrome and popups are "always inverted")
+    "SkButton": lit("2A2A2A", "505050"), "SkButtonPressed": PRESSED, "SkButtonCenter": lit("2A2A2A", "505050"), "SkButtonCenterPressed": PRESSED,
+    "FnButtonNormal": lit("2A2A2A", "505050"), "FnButtonPressed": PRESSED, "FnButtonInactive": lit("1C1C1C", "343434", ho=0.05, fo=0.8, ro=0.8),
+    "TbButton": lit("2A2A2A", "505050"), "TbButtonPressed": PRESSED, "TbButtonInactive": lit("1C1C1C", "343434", ho=0.05, fo=0.8, ro=0.8), "TbButtonMode": lit("1B3C70", ACC, ho=0.10),
+    "Popup": lit("1A1A1A", "3A3A3A", ho=0.10, fo=0.96), "PopupHeading": lit("262626", "3A3A3A", ho=0.14), "PopupSub": lit("202020", "3A3A3A", ho=0.08),
+    "PopupPreview": lit("1A1A1A", "505050", ho=0.10, fo=0.96), "SetOptFoc": lit("1B3C70", ACC, ho=0.0, fo=0.6, ro=0.9),
+}
+CONTENT_DARK = {   # content surfaces on the dark skin
+    "Button": lit("2A2A2A", "505050"), "ButtonPressed": PRESSED, "ButtonInactive": lit("1C1C1C", "343434", ho=0.05, fo=0.8, ro=0.8), "ButtonHighlight": lit("1B3C70", ACC, ho=0.10),
+    "List": lit(ACC, ACC, ho=0.0, fo=0.30, ro=0.0), "ListPressed": lit(ACC, ACC, ho=0.0, fo=0.50, ro=0.0),
+    "Grid": lit(ACC, ACC, ho=0.0, fo=0.20, ro=0.9), "GridPressed": lit(ACC, ACC, ho=0.0, fo=0.40, ro=1.0),
+    "Input": lit("1E1E1E", "505050", ho=0.0), "InputCharPreview": lit("1E1E1E", ACC, ho=0.0), "Notepad": lit("222222", "3A3A3A", ho=0.0),
+}
+CONTENT_LIGHT = {   # content surfaces on the Hybrid skin (light content, dark chrome)
+    "Button": lit("F2F2F4", "B4B4B8", hi="FFFFFF", ho=0.8), "ButtonPressed": lit("CFE0FF", ACC, ho=0.0), "ButtonInactive": lit("E8E8EA", "D0D0D4", ho=0.0, fo=0.8, ro=0.8),
+    "ButtonHighlight": lit("CFE0FF", ACC, ho=0.0),
+    "List": lit(ACC, ACC, ho=0.0, fo=0.22, ro=0.0), "ListPressed": lit(ACC, ACC, ho=0.0, fo=0.40, ro=0.0),
+    "Grid": lit(ACC, ACC, ho=0.0, fo=0.16, ro=0.9), "GridPressed": lit(ACC, ACC, ho=0.0, fo=0.32, ro=1.0),
+    "Input": lit("FFFFFF", "B4B4B8", ho=0.0), "InputCharPreview": lit("FFFFFF", ACC, ho=0.0), "Notepad": lit("FAFAF2", "D0D0C0", ho=0.0),
 }
 
-# the skin frame item -> (our family)
+# the skin frame item -> our family. Group 1 (the bar): SkButton*, FnButton*, Tb*; group 2: Button*, List, Grid, Input; group 3: Popup*, Notepad, SetOptFoc
 FRAMES = [
-    ("QgnFrSctrlSkButton", "SkButton"),
-    ("QgnFrSctrlSkButtonPressed", "SkButtonPressed"),
-    ("QgnFrSctrlSkButtonCenter", "SkButtonCenter"),
-    ("QgnFrSctrlSkButtonCenterPressed", "SkButtonCenterPressed"),
-    ("QsnFrFunctionButtonNormal", "FnButtonNormal"),
-    ("QsnFrFunctionButtonPressed", "FnButtonPressed"),
-    ("QsnFrFunctionButtonInactive", "FnButtonInactive"),
+    ("QgnFrSctrlSkButton", "SkButton"), ("QgnFrSctrlSkButtonPressed", "SkButtonPressed"),
+    ("QgnFrSctrlSkButtonCenter", "SkButtonCenter"), ("QgnFrSctrlSkButtonCenterPressed", "SkButtonCenterPressed"),
+    ("QsnFrFunctionButtonNormal", "FnButtonNormal"), ("QsnFrFunctionButtonPressed", "FnButtonPressed"), ("QsnFrFunctionButtonInactive", "FnButtonInactive"),
+    ("QsnFrButtonTb", "TbButton"), ("QsnFrButtonTbPressed", "TbButtonPressed"), ("QsnFrButtonTbInactive", "TbButtonInactive"), ("QsnFrButtonTbMode", "TbButtonMode"),
+    ("QsnFrButtonNormal", "Button"), ("QsnFrButtonPressed", "ButtonPressed"), ("QsnFrButtonInactive", "ButtonInactive"), ("QsnFrButtonHighlight", "ButtonHighlight"),
+    ("QgnFrSctrlButton", "Button"), ("QgnFrSctrlButtonPressed", "ButtonPressed"),
+    ("QsnFrList", "List"), ("QsnFrListPressed", "ListPressed"), ("QsnFrGrid", "Grid"), ("QsnFrGridPressed", "GridPressed"),
+    ("QsnFrInput", "Input"), ("QsnFrInputCharPreview", "InputCharPreview"),
+    ("QsnFrPopup", "Popup"), ("QsnFrPopupHeading", "PopupHeading"), ("QsnFrPopupSub", "PopupSub"), ("QsnFrPopupPreview", "PopupPreview"),
+    ("QsnFrNotepad", "Notepad"), ("QsnFrSetOptFoc", "SetOptFoc"),
 ]
 
 # bar backgrounds: scalable items, a translucent dark bar with a lighter top edge
@@ -87,26 +104,31 @@ ORDER = ["tl", "tr", "bl", "br", "t", "b", "l", "r", "c"]
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    inc = ["// generated by tools/gen_frames.py (AGPL-3.0-only): the frames and bar backgrounds, drawn in the Etesian look"]
-    done = set()
-    for iid, fam in FRAMES:
-        st = STYLES[fam]
-        lines = ["FRAME IID=%s" % iid]
-        for p in ORDER:
-            fn = "frames/%s_%s.svg" % (fam.lower(), p)
-            if fn not in done:
-                open(os.path.join(OUT, os.path.basename(fn)), "w", newline="\n").write(svg(piece(p, st)))
-                done.add(fn)
-            lines.append("\tc16 %s SOFTMASK" % fn)
-        lines.append("END")
-        inc.append("\n".join(lines))
-    # the bar background: one translucent strip (a lighter top edge), the same art for every bar variant
-    body = rect(0, 0, S, S, BAR["fill"], BAR["fo"]) + rect(0, 0, S, 1, BAR["edge"], BAR["eo"])
-    open(os.path.join(OUT, "bar.svg"), "w", newline="\n").write(svg(body))
-    for iid in BARS:
-        inc.append("SCALABLEITEM IID=%s INPUT=none OUTPUT=0/RGBA\n\tEFFECT UID=0x101F8748 INPUTA=none INPUTB=none OUTPUT=0/RGBA\n\t\t\tBMP f c16 frames/bar.svg SOFTMASK\n\t\t\tINT ms 0\n\t\tEND\nEND" % iid)
-    open(os.path.join(OUT, "frames.inc"), "w", newline="\n").write("\n".join(inc) + "\n")
-    print("frames:", len(FRAMES), "svgs:", len(done) + 1)
+    nl = chr(10)
+    for mode, content in (("dark", CONTENT_DARK), ("hybrid", CONTENT_LIGHT)):
+        styles = dict(CHROME)
+        styles.update(content)
+        inc = ["// generated by tools/gen_frames.py (AGPL-3.0-only): the frames and bar backgrounds of the %s skin, drawn in the Etesian look" % mode]
+        done = set()
+        for iid, fam in FRAMES:
+            st = styles[fam]
+            lines = ["FRAME IID=%s" % iid]
+            for p in ORDER:
+                fn = "frames/%s_%s_%s.svg" % (mode if fam in content else "chrome", fam.lower(), p)
+                if fn not in done:
+                    open(os.path.join(OUT, os.path.basename(fn)), "w", newline=nl).write(svg(piece(p, st)))
+                    done.add(fn)
+                lines.append(chr(9) + "c16 %s SOFTMASK" % fn)
+            lines.append("END")
+            inc.append(nl.join(lines))
+        body = rect(0, 0, S, S, BAR["fill"], BAR["fo"]) + rect(0, 0, S, 1, BAR["edge"], BAR["eo"])
+        open(os.path.join(OUT, "bar.svg"), "w", newline=nl).write(svg(body))
+        t = chr(9)
+        for iid in BARS:
+            inc.append("SCALABLEITEM IID=%s INPUT=none OUTPUT=0/RGBA" % iid + nl + t + "EFFECT UID=0x101F8748 INPUTA=none INPUTB=none OUTPUT=0/RGBA" + nl
+                       + t * 3 + "BMP f c16 frames/bar.svg SOFTMASK" + nl + t * 3 + "INT ms 0" + nl + t * 2 + "END" + nl + "END")
+        open(os.path.join(OUT, mode + ".inc"), "w", newline=nl).write(nl.join(inc) + nl)
+        print(mode, "frames:", len(FRAMES), "svgs:", len(done) + 1)
 
 
 if __name__ == "__main__":
