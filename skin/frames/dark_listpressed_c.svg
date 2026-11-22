@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" width="16" height="16" viewBox="0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" preserveAspectRatio="none" width="16" height="16" viewBox="0 0 16 16">
 <rect x="0" y="0" width="16" height="16" fill="#4591FF" fill-opacity="0.5"/>
 </svg>

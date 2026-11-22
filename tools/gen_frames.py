@@ -63,7 +63,7 @@ BAR = dict(fill="141414", fo=0.88, edge="3A3A3A", eo=1.0)
 
 
 def svg(body):
-    return ('<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" width="%d" height="%d" '
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" preserveAspectRatio="none" width="%d" height="%d" '
             'viewBox="0 0 %d %d">\n%s</svg>\n' % (S, S, S, S, body))
 
 
