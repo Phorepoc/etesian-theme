@@ -37,6 +37,7 @@ def main(name, out):
     lst = open(os.path.join(out, name + "_MIFList.txt"), encoding="latin-1").read()
     lst = re.sub(r"(?m)(^|\s)/(?=\w)", lambda m: m.group(1) + "-", lst).replace("\\", "/")
     open(os.path.join(tmp, "list.txt"), "w", encoding="latin-1", newline="\n").write(lst)
+    print("MIFList (bitmaps):\n" + "\n".join(l for l in lst.splitlines() if "bmp" in l)[:1500])
     shutil.copy(os.environ["PHE_PALETTE"], os.path.join(tmp, "palette.pal"))
     r = subprocess.run([which("mifconv"), os.path.join(tmp, name + ".mif"), "-T" + tmp, "-P" + os.path.join(tmp, "palette.pal"),
                         "-S" + os.path.dirname(os.environ["PHE_SVGTENC"]), "-F" + os.path.join(tmp, "list.txt")],
