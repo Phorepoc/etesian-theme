@@ -15,13 +15,16 @@ PHE_PALETTE=${PHE_PALETTE:-${PHOREPOC_SYMBIAN:-}/symbian-2010/oss.FCL.sf.mw.uito
 [ -f "$PHE_PALETTE" ] || { echo "no ThirdPartyBitmap.pal at $PHE_PALETTE (set PHE_PALETTE)"; exit 1; }
 export PHE_PALETTE
 export PHE_SVGTENC=${PHE_SVGTENC:-$PHOREPOC_PDK/tools/svgtenc/svgtbinencode}
-UID_SKIN=E7016B31
 OUT=$PHOREPOC_BUILD/skin-gen
-python3 "$REPO/tools/build_skin.py" etesian-dark "$OUT"
 FILES=()
-FILES+=(--file "$OUT/etesian-dark.skn=!:/private/10207114/import/$UID_SKIN/etesian-dark.skn")
-for ext in mif mbm; do
-  [ -f "$OUT/etesian-dark.$ext" ] && FILES+=(--file "$OUT/etesian-dark.$ext=!:/resource/skins/$UID_SKIN/etesian-dark.$ext")
+# two skins: "Etesian" = the Hybrid colour mode (the default, UID E7016B33) and "Etesian Dark" (E7016B31)
+for pair in "etesian:E7016B33" "etesian-dark:E7016B31"; do
+  name=${pair%%:*}; uid=${pair##*:}
+  python3 "$REPO/tools/build_skin.py" "$name" "$OUT"
+  FILES+=(--file "$OUT/$name.skn=!:/private/10207114/import/$uid/$name.skn")
+  for ext in mif mbm; do
+    [ -f "$OUT/$name.$ext" ] && FILES+=(--file "$OUT/$name.$ext=!:/resource/skins/$uid/$name.$ext")
+  done
 done
 for f in "$REPO"/LICENSES/* "$REPO/NOTICE"; do
   FILES+=(--file "$f=!:/resource/etesian/licences/$(basename "$f")")

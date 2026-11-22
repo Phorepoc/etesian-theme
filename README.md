@@ -3,7 +3,7 @@
 The Etesian design language (the N9's look, re-envisioned) as a standard S60 theme for Symbian^3 and Phorepoc OS: dark colours, its own
 application icons and the Fira Sans typeface.
 
-- `skin/` the skin: `etesian-dark.txt` (UID E7016B31, a scalable skin), the screen and status-area backgrounds, `icons/` the 20 application icons
+- `skin/` two skins: `etesian.txt` = "Etesian", the Hybrid colour mode (the default: light content, dark chrome; UID E7016B33, made by `tools/gen_hybrid.py`) and `etesian-dark.txt` = "Etesian Dark" (UID E7016B31), the backgrounds, `icons/` the 37 application icons
   (SVG, `mapping.txt` = application UID to icon).
 - `fonts/` Fira Sans Light, Regular and Bold, unmodified, with the SIL OFL.
 - `tools/build_skin.py` compiles the skin with the pdk toolchain (`akn_skin_desc_compiler`, `mifconv`) into `.skn`, `.mif` and `.mbm`.

@@ -9,12 +9,18 @@ LICENSE + ADDITIONAL-TERMS.md); the accent colours are its per-application accen
 Writes <outdir>/<name>.svg and <outdir>/mapping.txt (application UID -> name; UIDs left 0 are not known yet)."""
 import math, os, re, sys
 
-APPS = [  # name, glyph, accent, application UID (0 = to fill in from the image's application list)
+APPS = [  # name, glyph, accent, application UID (0 = not mapped)
     ("phone", "phone", "#62B700", 0xE7016B53), ("messages", "message", "#09A7CC", 0x100058C5), ("contacts", "person", "#007DC9", 0x101F4CCE),
-    ("calendar", "calendar", "#EF5500", 0x10005901), ("clock", "clock", "#F77219", 0x10005903), ("music", "music", "#CC09BA", 0x102072C3), ("gallery", "photo", "#821DDE", 0x200159B2),
-    ("settings", "settings", "#4591FF", 0x100058EC), ("browser", "globe", "#4591FF", 0xE7016B20), ("camera", "camera", "#821DDE", 0), ("files", "folder", "#EA650A", 0x101F84EB),
+    ("calendar", "calendar", "#EF5500", 0x10005901), ("clock", "clock", "#F77219", 0x10005903), ("music", "music", "#CC09BA", 0x102072C3), ("gallery", "photo", "#821DDE", 0x2002134F),
+    ("settings", "settings", "#4591FF", 0x100058EC), ("browser", "globe", "#4591FF", 0xE7016B20), ("camera", "camera", "#821DDE", 0xE7016C60), ("files", "folder", "#EA650A", 0x101F84EB),
     ("calculator", "grid", "#ED9507", 0x10005902), ("notes", "edit", "#F2B111", 0x10005907), ("email", "mail", "#0067BC", 0),
-    ("bluetooth", "bluetooth", "#1C51AF", 0x10005951), ("search", "search", "#4591FF", 0x10282411), ("logs", "list", "#62B700", 0x101F4CD5), ("radio", "speaker", "#FF8500", 0x10207A89)]
+    ("bluetooth", "bluetooth", "#1C51AF", 0x10005951), ("search", "search", "#4591FF", 0x10282411), ("logs", "list", "#62B700", 0x101F4CD5), ("radio", "speaker", "#FF8500", 0x10207A89),
+    # the other applications of the image (2026-11-22, the PC image's application list)
+    ("about", "info", "#4591FF", 0x10005A22), ("help", "info", "#1C51AF", 0x10005234), ("connections", "wifi", "#4591FF", 0x101F84D0), ("menu", "menu", "#4591FF", 0x101F4CD2),
+    ("voicemail", "mic", "#09A7CC", 0x100058F5), ("profiles", "speaker", "#62B700", 0x100058F8), ("themes", "wrench", "#CC09BA", 0x10005A32), ("simservices", "bag", "#EA650A", 0x101F4CE0),
+    ("speeddial", "star", "#F2B111", 0x1000590A), ("images", "photo", "#821DDE", 0x101F45EA), ("recorder", "record", "#DA201E", 0x100058CA), ("wlan", "wifi", "#007DC9", 0x10281CAA),
+    ("terminal", "enter", "#62B700", 0xE7015900), ("videos", "play", "#870CBA", 0x200159B2), ("podcasts", "rss", "#FF8500", 0xA0009D00), ("eggtimer", "hourglass", "#F2B111", 0x2000DAD2),
+    ("catalogue", "bag", "#1C51AF", 0xE70157FA), ("pebble", "smile", "#EF5500", 0xE7017D00), ("shell", "window", "#4591FF", 0xE7016B52)]
 
 import re as _re
 
