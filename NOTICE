@@ -51,3 +51,15 @@ terms.
 
 The copyright holder also offers this code under separate commercial licences or licence exceptions (dual licensing).
 Those are separate agreements; they do not change the terms above for anyone who uses the code under the AGPL.
+
+----------------------------------------------------------------------------------------------------
+
+# Third-party icons (GPL-3.0)
+
+The bitmap application icons of the theme are taken, unmodified apart from the conversion to bitmap MIF (tools/import_png_icons.py),
+from the n9ish icon pack for Sailfish OS, https://github.com/speactra/harbour-themepack-n9ish (speactra), licensed GNU General Public
+License v3.0 (LICENSES/GPL-3.0-only.txt). The pack credits: "The N9-like icons used in this pack are made by hpluslabels on XDA", and
+fills its gaps from the Evolve Plus icon pack by fravaccaro (https://openrepos.net/content/fravaccaro/evolve-plus-icons). The source PNGs
+are in skin/icons/n9ish/ with their file names mapped in tools/import_png_icons.py (the application UID of each is in skin/icons/mapping.txt).
+The icons are GPL-3.0 parts of an AGPL-3.0-only work, which the two licences allow to be combined (GPL-3.0 section 13 / AGPL-3.0 section 13).
+The remaining application icons are our own drawings (tools/gen_app_icons.py, AGPL-3.0-only).
