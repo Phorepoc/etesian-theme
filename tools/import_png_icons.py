@@ -5,7 +5,7 @@
 PNGs are kept in skin/icons/n9ish/, and each is converted to the pair the Symbian skin compiler reads for a bitmap application icon: a 24-bit
 BMP (colour) and an 8-bit grey BMP (the alpha as the soft mask, white = opaque), at the PNG's own size. There is no vector source for these.
     python3 tools/import_png_icons.py <n9ish-checkout> [<outdir>]     (needs Pillow; run by hand, the results are committed)
-Writes <outdir>/<name>.bmp and <name>_mask.bmp for every name of PICKS, and copies the source PNGs."""
+Writes <outdir>/<name>.bmp and <name>_mask_soft.bmp for every name of PICKS, and copies the source PNGs."""
 import os, shutil, sys
 from PIL import Image
 
@@ -35,7 +35,7 @@ def main(src, out):
         bg = Image.new("RGB", im.size, (0, 0, 0))
         bg.paste(im, mask=im.split()[3])
         bg.save(os.path.join(out, "bmp", name + ".bmp"))
-        im.split()[3].save(os.path.join(out, "bmp", name + "_mask.bmp"))
+        im.split()[3].save(os.path.join(out, "bmp", name + "_mask_soft.bmp"))
         print(name, im.size)
 
 

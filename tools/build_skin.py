@@ -22,7 +22,7 @@ def main(name, out):
             parts = line.split()
             if len(parts) == 2 and not line.startswith("#") and int(parts[0], 16) != 0 and os.path.isfile(os.path.join(stage, "icons", "bmp", parts[1] + ".bmp")):
                 # a bitmap icon (the n9ish pack, tools/import_png_icons.py): 24-bit colour and the alpha as an 8-bit soft mask
-                blocks += "\nAPPICON UID=0x%s\n\tc24 icons/bmp/%s.bmp SOFTMASK=icons/bmp/%s_mask.bmp\nEND\n" % (parts[0], parts[1], parts[1])
+                blocks += "\nAPPICON UID=0x%s\n\tc24 icons/bmp/%s.bmp SOFTMASK=icons/bmp/%s_mask_soft.bmp\nEND\n" % (parts[0], parts[1], parts[1])
             elif len(parts) == 2 and not line.startswith("#") and int(parts[0], 16) != 0 and os.path.isfile(os.path.join(stage, "icons", parts[1] + ".svg")):
                 blocks +="\nAPPICON UID=0x%s\n\tc16 icons/%s.svg SOFTMASK\nEND\n" % (parts[0], parts[1])
         d = os.path.join(stage, name + ".txt")
