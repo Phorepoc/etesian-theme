@@ -4,319 +4,319 @@ FRAME IID=QgnFrSctrlSkButton
 	c16 frames/chrome_skbutton_tr.svg SOFTMASK
 	c16 frames/chrome_skbutton_bl.svg SOFTMASK
 	c16 frames/chrome_skbutton_br.svg SOFTMASK
-	c16 frames/chrome_skbutton_t.svg SOFTMASK
-	c16 frames/chrome_skbutton_b.svg SOFTMASK
-	c16 frames/chrome_skbutton_l.svg SOFTMASK
-	c16 frames/chrome_skbutton_r.svg SOFTMASK
-	c16 frames/chrome_skbutton_c.svg SOFTMASK
+	c16 frames/chrome_skbutton_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbutton_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbutton_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbutton_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbutton_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QgnFrSctrlSkButtonPressed
 	c16 frames/chrome_skbuttonpressed_tl.svg SOFTMASK
 	c16 frames/chrome_skbuttonpressed_tr.svg SOFTMASK
 	c16 frames/chrome_skbuttonpressed_bl.svg SOFTMASK
 	c16 frames/chrome_skbuttonpressed_br.svg SOFTMASK
-	c16 frames/chrome_skbuttonpressed_t.svg SOFTMASK
-	c16 frames/chrome_skbuttonpressed_b.svg SOFTMASK
-	c16 frames/chrome_skbuttonpressed_l.svg SOFTMASK
-	c16 frames/chrome_skbuttonpressed_r.svg SOFTMASK
-	c16 frames/chrome_skbuttonpressed_c.svg SOFTMASK
+	c16 frames/chrome_skbuttonpressed_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttonpressed_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttonpressed_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttonpressed_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttonpressed_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QgnFrSctrlSkButtonCenter
 	c16 frames/chrome_skbuttoncenter_tl.svg SOFTMASK
 	c16 frames/chrome_skbuttoncenter_tr.svg SOFTMASK
 	c16 frames/chrome_skbuttoncenter_bl.svg SOFTMASK
 	c16 frames/chrome_skbuttoncenter_br.svg SOFTMASK
-	c16 frames/chrome_skbuttoncenter_t.svg SOFTMASK
-	c16 frames/chrome_skbuttoncenter_b.svg SOFTMASK
-	c16 frames/chrome_skbuttoncenter_l.svg SOFTMASK
-	c16 frames/chrome_skbuttoncenter_r.svg SOFTMASK
-	c16 frames/chrome_skbuttoncenter_c.svg SOFTMASK
+	c16 frames/chrome_skbuttoncenter_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttoncenter_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttoncenter_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttoncenter_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttoncenter_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QgnFrSctrlSkButtonCenterPressed
 	c16 frames/chrome_skbuttoncenterpressed_tl.svg SOFTMASK
 	c16 frames/chrome_skbuttoncenterpressed_tr.svg SOFTMASK
 	c16 frames/chrome_skbuttoncenterpressed_bl.svg SOFTMASK
 	c16 frames/chrome_skbuttoncenterpressed_br.svg SOFTMASK
-	c16 frames/chrome_skbuttoncenterpressed_t.svg SOFTMASK
-	c16 frames/chrome_skbuttoncenterpressed_b.svg SOFTMASK
-	c16 frames/chrome_skbuttoncenterpressed_l.svg SOFTMASK
-	c16 frames/chrome_skbuttoncenterpressed_r.svg SOFTMASK
-	c16 frames/chrome_skbuttoncenterpressed_c.svg SOFTMASK
+	c16 frames/chrome_skbuttoncenterpressed_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttoncenterpressed_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttoncenterpressed_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttoncenterpressed_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_skbuttoncenterpressed_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrFunctionButtonNormal
 	c16 frames/chrome_fnbuttonnormal_tl.svg SOFTMASK
 	c16 frames/chrome_fnbuttonnormal_tr.svg SOFTMASK
 	c16 frames/chrome_fnbuttonnormal_bl.svg SOFTMASK
 	c16 frames/chrome_fnbuttonnormal_br.svg SOFTMASK
-	c16 frames/chrome_fnbuttonnormal_t.svg SOFTMASK
-	c16 frames/chrome_fnbuttonnormal_b.svg SOFTMASK
-	c16 frames/chrome_fnbuttonnormal_l.svg SOFTMASK
-	c16 frames/chrome_fnbuttonnormal_r.svg SOFTMASK
-	c16 frames/chrome_fnbuttonnormal_c.svg SOFTMASK
+	c16 frames/chrome_fnbuttonnormal_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttonnormal_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttonnormal_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttonnormal_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttonnormal_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrFunctionButtonPressed
 	c16 frames/chrome_fnbuttonpressed_tl.svg SOFTMASK
 	c16 frames/chrome_fnbuttonpressed_tr.svg SOFTMASK
 	c16 frames/chrome_fnbuttonpressed_bl.svg SOFTMASK
 	c16 frames/chrome_fnbuttonpressed_br.svg SOFTMASK
-	c16 frames/chrome_fnbuttonpressed_t.svg SOFTMASK
-	c16 frames/chrome_fnbuttonpressed_b.svg SOFTMASK
-	c16 frames/chrome_fnbuttonpressed_l.svg SOFTMASK
-	c16 frames/chrome_fnbuttonpressed_r.svg SOFTMASK
-	c16 frames/chrome_fnbuttonpressed_c.svg SOFTMASK
+	c16 frames/chrome_fnbuttonpressed_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttonpressed_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttonpressed_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttonpressed_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttonpressed_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrFunctionButtonInactive
 	c16 frames/chrome_fnbuttoninactive_tl.svg SOFTMASK
 	c16 frames/chrome_fnbuttoninactive_tr.svg SOFTMASK
 	c16 frames/chrome_fnbuttoninactive_bl.svg SOFTMASK
 	c16 frames/chrome_fnbuttoninactive_br.svg SOFTMASK
-	c16 frames/chrome_fnbuttoninactive_t.svg SOFTMASK
-	c16 frames/chrome_fnbuttoninactive_b.svg SOFTMASK
-	c16 frames/chrome_fnbuttoninactive_l.svg SOFTMASK
-	c16 frames/chrome_fnbuttoninactive_r.svg SOFTMASK
-	c16 frames/chrome_fnbuttoninactive_c.svg SOFTMASK
+	c16 frames/chrome_fnbuttoninactive_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttoninactive_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttoninactive_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttoninactive_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_fnbuttoninactive_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrButtonTb
 	c16 frames/chrome_tbbutton_tl.svg SOFTMASK
 	c16 frames/chrome_tbbutton_tr.svg SOFTMASK
 	c16 frames/chrome_tbbutton_bl.svg SOFTMASK
 	c16 frames/chrome_tbbutton_br.svg SOFTMASK
-	c16 frames/chrome_tbbutton_t.svg SOFTMASK
-	c16 frames/chrome_tbbutton_b.svg SOFTMASK
-	c16 frames/chrome_tbbutton_l.svg SOFTMASK
-	c16 frames/chrome_tbbutton_r.svg SOFTMASK
-	c16 frames/chrome_tbbutton_c.svg SOFTMASK
+	c16 frames/chrome_tbbutton_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbutton_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbutton_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbutton_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbutton_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrButtonTbPressed
 	c16 frames/chrome_tbbuttonpressed_tl.svg SOFTMASK
 	c16 frames/chrome_tbbuttonpressed_tr.svg SOFTMASK
 	c16 frames/chrome_tbbuttonpressed_bl.svg SOFTMASK
 	c16 frames/chrome_tbbuttonpressed_br.svg SOFTMASK
-	c16 frames/chrome_tbbuttonpressed_t.svg SOFTMASK
-	c16 frames/chrome_tbbuttonpressed_b.svg SOFTMASK
-	c16 frames/chrome_tbbuttonpressed_l.svg SOFTMASK
-	c16 frames/chrome_tbbuttonpressed_r.svg SOFTMASK
-	c16 frames/chrome_tbbuttonpressed_c.svg SOFTMASK
+	c16 frames/chrome_tbbuttonpressed_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttonpressed_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttonpressed_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttonpressed_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttonpressed_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrButtonTbInactive
 	c16 frames/chrome_tbbuttoninactive_tl.svg SOFTMASK
 	c16 frames/chrome_tbbuttoninactive_tr.svg SOFTMASK
 	c16 frames/chrome_tbbuttoninactive_bl.svg SOFTMASK
 	c16 frames/chrome_tbbuttoninactive_br.svg SOFTMASK
-	c16 frames/chrome_tbbuttoninactive_t.svg SOFTMASK
-	c16 frames/chrome_tbbuttoninactive_b.svg SOFTMASK
-	c16 frames/chrome_tbbuttoninactive_l.svg SOFTMASK
-	c16 frames/chrome_tbbuttoninactive_r.svg SOFTMASK
-	c16 frames/chrome_tbbuttoninactive_c.svg SOFTMASK
+	c16 frames/chrome_tbbuttoninactive_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttoninactive_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttoninactive_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttoninactive_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttoninactive_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrButtonTbMode
 	c16 frames/chrome_tbbuttonmode_tl.svg SOFTMASK
 	c16 frames/chrome_tbbuttonmode_tr.svg SOFTMASK
 	c16 frames/chrome_tbbuttonmode_bl.svg SOFTMASK
 	c16 frames/chrome_tbbuttonmode_br.svg SOFTMASK
-	c16 frames/chrome_tbbuttonmode_t.svg SOFTMASK
-	c16 frames/chrome_tbbuttonmode_b.svg SOFTMASK
-	c16 frames/chrome_tbbuttonmode_l.svg SOFTMASK
-	c16 frames/chrome_tbbuttonmode_r.svg SOFTMASK
-	c16 frames/chrome_tbbuttonmode_c.svg SOFTMASK
+	c16 frames/chrome_tbbuttonmode_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttonmode_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttonmode_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttonmode_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_tbbuttonmode_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrButtonNormal
 	c16 frames/hybrid_button_tl.svg SOFTMASK
 	c16 frames/hybrid_button_tr.svg SOFTMASK
 	c16 frames/hybrid_button_bl.svg SOFTMASK
 	c16 frames/hybrid_button_br.svg SOFTMASK
-	c16 frames/hybrid_button_t.svg SOFTMASK
-	c16 frames/hybrid_button_b.svg SOFTMASK
-	c16 frames/hybrid_button_l.svg SOFTMASK
-	c16 frames/hybrid_button_r.svg SOFTMASK
-	c16 frames/hybrid_button_c.svg SOFTMASK
+	c16 frames/hybrid_button_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_button_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_button_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_button_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_button_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrButtonPressed
 	c16 frames/hybrid_buttonpressed_tl.svg SOFTMASK
 	c16 frames/hybrid_buttonpressed_tr.svg SOFTMASK
 	c16 frames/hybrid_buttonpressed_bl.svg SOFTMASK
 	c16 frames/hybrid_buttonpressed_br.svg SOFTMASK
-	c16 frames/hybrid_buttonpressed_t.svg SOFTMASK
-	c16 frames/hybrid_buttonpressed_b.svg SOFTMASK
-	c16 frames/hybrid_buttonpressed_l.svg SOFTMASK
-	c16 frames/hybrid_buttonpressed_r.svg SOFTMASK
-	c16 frames/hybrid_buttonpressed_c.svg SOFTMASK
+	c16 frames/hybrid_buttonpressed_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonpressed_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonpressed_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonpressed_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonpressed_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrButtonInactive
 	c16 frames/hybrid_buttoninactive_tl.svg SOFTMASK
 	c16 frames/hybrid_buttoninactive_tr.svg SOFTMASK
 	c16 frames/hybrid_buttoninactive_bl.svg SOFTMASK
 	c16 frames/hybrid_buttoninactive_br.svg SOFTMASK
-	c16 frames/hybrid_buttoninactive_t.svg SOFTMASK
-	c16 frames/hybrid_buttoninactive_b.svg SOFTMASK
-	c16 frames/hybrid_buttoninactive_l.svg SOFTMASK
-	c16 frames/hybrid_buttoninactive_r.svg SOFTMASK
-	c16 frames/hybrid_buttoninactive_c.svg SOFTMASK
+	c16 frames/hybrid_buttoninactive_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttoninactive_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttoninactive_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttoninactive_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttoninactive_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrButtonHighlight
 	c16 frames/hybrid_buttonhighlight_tl.svg SOFTMASK
 	c16 frames/hybrid_buttonhighlight_tr.svg SOFTMASK
 	c16 frames/hybrid_buttonhighlight_bl.svg SOFTMASK
 	c16 frames/hybrid_buttonhighlight_br.svg SOFTMASK
-	c16 frames/hybrid_buttonhighlight_t.svg SOFTMASK
-	c16 frames/hybrid_buttonhighlight_b.svg SOFTMASK
-	c16 frames/hybrid_buttonhighlight_l.svg SOFTMASK
-	c16 frames/hybrid_buttonhighlight_r.svg SOFTMASK
-	c16 frames/hybrid_buttonhighlight_c.svg SOFTMASK
+	c16 frames/hybrid_buttonhighlight_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonhighlight_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonhighlight_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonhighlight_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonhighlight_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QgnFrSctrlButton
 	c16 frames/hybrid_button_tl.svg SOFTMASK
 	c16 frames/hybrid_button_tr.svg SOFTMASK
 	c16 frames/hybrid_button_bl.svg SOFTMASK
 	c16 frames/hybrid_button_br.svg SOFTMASK
-	c16 frames/hybrid_button_t.svg SOFTMASK
-	c16 frames/hybrid_button_b.svg SOFTMASK
-	c16 frames/hybrid_button_l.svg SOFTMASK
-	c16 frames/hybrid_button_r.svg SOFTMASK
-	c16 frames/hybrid_button_c.svg SOFTMASK
+	c16 frames/hybrid_button_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_button_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_button_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_button_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_button_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QgnFrSctrlButtonPressed
 	c16 frames/hybrid_buttonpressed_tl.svg SOFTMASK
 	c16 frames/hybrid_buttonpressed_tr.svg SOFTMASK
 	c16 frames/hybrid_buttonpressed_bl.svg SOFTMASK
 	c16 frames/hybrid_buttonpressed_br.svg SOFTMASK
-	c16 frames/hybrid_buttonpressed_t.svg SOFTMASK
-	c16 frames/hybrid_buttonpressed_b.svg SOFTMASK
-	c16 frames/hybrid_buttonpressed_l.svg SOFTMASK
-	c16 frames/hybrid_buttonpressed_r.svg SOFTMASK
-	c16 frames/hybrid_buttonpressed_c.svg SOFTMASK
+	c16 frames/hybrid_buttonpressed_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonpressed_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonpressed_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonpressed_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_buttonpressed_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrList
 	c16 frames/hybrid_list_tl.svg SOFTMASK
 	c16 frames/hybrid_list_tr.svg SOFTMASK
 	c16 frames/hybrid_list_bl.svg SOFTMASK
 	c16 frames/hybrid_list_br.svg SOFTMASK
-	c16 frames/hybrid_list_t.svg SOFTMASK
-	c16 frames/hybrid_list_b.svg SOFTMASK
-	c16 frames/hybrid_list_l.svg SOFTMASK
-	c16 frames/hybrid_list_r.svg SOFTMASK
-	c16 frames/hybrid_list_c.svg SOFTMASK
+	c16 frames/hybrid_list_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_list_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_list_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_list_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_list_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrListPressed
 	c16 frames/hybrid_listpressed_tl.svg SOFTMASK
 	c16 frames/hybrid_listpressed_tr.svg SOFTMASK
 	c16 frames/hybrid_listpressed_bl.svg SOFTMASK
 	c16 frames/hybrid_listpressed_br.svg SOFTMASK
-	c16 frames/hybrid_listpressed_t.svg SOFTMASK
-	c16 frames/hybrid_listpressed_b.svg SOFTMASK
-	c16 frames/hybrid_listpressed_l.svg SOFTMASK
-	c16 frames/hybrid_listpressed_r.svg SOFTMASK
-	c16 frames/hybrid_listpressed_c.svg SOFTMASK
+	c16 frames/hybrid_listpressed_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_listpressed_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_listpressed_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_listpressed_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_listpressed_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrGrid
 	c16 frames/hybrid_grid_tl.svg SOFTMASK
 	c16 frames/hybrid_grid_tr.svg SOFTMASK
 	c16 frames/hybrid_grid_bl.svg SOFTMASK
 	c16 frames/hybrid_grid_br.svg SOFTMASK
-	c16 frames/hybrid_grid_t.svg SOFTMASK
-	c16 frames/hybrid_grid_b.svg SOFTMASK
-	c16 frames/hybrid_grid_l.svg SOFTMASK
-	c16 frames/hybrid_grid_r.svg SOFTMASK
-	c16 frames/hybrid_grid_c.svg SOFTMASK
+	c16 frames/hybrid_grid_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_grid_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_grid_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_grid_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_grid_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrGridPressed
 	c16 frames/hybrid_gridpressed_tl.svg SOFTMASK
 	c16 frames/hybrid_gridpressed_tr.svg SOFTMASK
 	c16 frames/hybrid_gridpressed_bl.svg SOFTMASK
 	c16 frames/hybrid_gridpressed_br.svg SOFTMASK
-	c16 frames/hybrid_gridpressed_t.svg SOFTMASK
-	c16 frames/hybrid_gridpressed_b.svg SOFTMASK
-	c16 frames/hybrid_gridpressed_l.svg SOFTMASK
-	c16 frames/hybrid_gridpressed_r.svg SOFTMASK
-	c16 frames/hybrid_gridpressed_c.svg SOFTMASK
+	c16 frames/hybrid_gridpressed_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_gridpressed_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_gridpressed_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_gridpressed_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_gridpressed_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrInput
 	c16 frames/hybrid_input_tl.svg SOFTMASK
 	c16 frames/hybrid_input_tr.svg SOFTMASK
 	c16 frames/hybrid_input_bl.svg SOFTMASK
 	c16 frames/hybrid_input_br.svg SOFTMASK
-	c16 frames/hybrid_input_t.svg SOFTMASK
-	c16 frames/hybrid_input_b.svg SOFTMASK
-	c16 frames/hybrid_input_l.svg SOFTMASK
-	c16 frames/hybrid_input_r.svg SOFTMASK
-	c16 frames/hybrid_input_c.svg SOFTMASK
+	c16 frames/hybrid_input_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_input_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_input_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_input_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_input_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrInputCharPreview
 	c16 frames/hybrid_inputcharpreview_tl.svg SOFTMASK
 	c16 frames/hybrid_inputcharpreview_tr.svg SOFTMASK
 	c16 frames/hybrid_inputcharpreview_bl.svg SOFTMASK
 	c16 frames/hybrid_inputcharpreview_br.svg SOFTMASK
-	c16 frames/hybrid_inputcharpreview_t.svg SOFTMASK
-	c16 frames/hybrid_inputcharpreview_b.svg SOFTMASK
-	c16 frames/hybrid_inputcharpreview_l.svg SOFTMASK
-	c16 frames/hybrid_inputcharpreview_r.svg SOFTMASK
-	c16 frames/hybrid_inputcharpreview_c.svg SOFTMASK
+	c16 frames/hybrid_inputcharpreview_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_inputcharpreview_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_inputcharpreview_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_inputcharpreview_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_inputcharpreview_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrPopup
 	c16 frames/chrome_popup_tl.svg SOFTMASK
 	c16 frames/chrome_popup_tr.svg SOFTMASK
 	c16 frames/chrome_popup_bl.svg SOFTMASK
 	c16 frames/chrome_popup_br.svg SOFTMASK
-	c16 frames/chrome_popup_t.svg SOFTMASK
-	c16 frames/chrome_popup_b.svg SOFTMASK
-	c16 frames/chrome_popup_l.svg SOFTMASK
-	c16 frames/chrome_popup_r.svg SOFTMASK
-	c16 frames/chrome_popup_c.svg SOFTMASK
+	c16 frames/chrome_popup_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_popup_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_popup_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_popup_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_popup_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrPopupHeading
 	c16 frames/chrome_popupheading_tl.svg SOFTMASK
 	c16 frames/chrome_popupheading_tr.svg SOFTMASK
 	c16 frames/chrome_popupheading_bl.svg SOFTMASK
 	c16 frames/chrome_popupheading_br.svg SOFTMASK
-	c16 frames/chrome_popupheading_t.svg SOFTMASK
-	c16 frames/chrome_popupheading_b.svg SOFTMASK
-	c16 frames/chrome_popupheading_l.svg SOFTMASK
-	c16 frames/chrome_popupheading_r.svg SOFTMASK
-	c16 frames/chrome_popupheading_c.svg SOFTMASK
+	c16 frames/chrome_popupheading_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_popupheading_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_popupheading_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_popupheading_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_popupheading_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrPopupSub
 	c16 frames/chrome_popupsub_tl.svg SOFTMASK
 	c16 frames/chrome_popupsub_tr.svg SOFTMASK
 	c16 frames/chrome_popupsub_bl.svg SOFTMASK
 	c16 frames/chrome_popupsub_br.svg SOFTMASK
-	c16 frames/chrome_popupsub_t.svg SOFTMASK
-	c16 frames/chrome_popupsub_b.svg SOFTMASK
-	c16 frames/chrome_popupsub_l.svg SOFTMASK
-	c16 frames/chrome_popupsub_r.svg SOFTMASK
-	c16 frames/chrome_popupsub_c.svg SOFTMASK
+	c16 frames/chrome_popupsub_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_popupsub_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_popupsub_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_popupsub_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_popupsub_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrPopupPreview
 	c16 frames/chrome_popuppreview_tl.svg SOFTMASK
 	c16 frames/chrome_popuppreview_tr.svg SOFTMASK
 	c16 frames/chrome_popuppreview_bl.svg SOFTMASK
 	c16 frames/chrome_popuppreview_br.svg SOFTMASK
-	c16 frames/chrome_popuppreview_t.svg SOFTMASK
-	c16 frames/chrome_popuppreview_b.svg SOFTMASK
-	c16 frames/chrome_popuppreview_l.svg SOFTMASK
-	c16 frames/chrome_popuppreview_r.svg SOFTMASK
-	c16 frames/chrome_popuppreview_c.svg SOFTMASK
+	c16 frames/chrome_popuppreview_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_popuppreview_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_popuppreview_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_popuppreview_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_popuppreview_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrNotepad
 	c16 frames/hybrid_notepad_tl.svg SOFTMASK
 	c16 frames/hybrid_notepad_tr.svg SOFTMASK
 	c16 frames/hybrid_notepad_bl.svg SOFTMASK
 	c16 frames/hybrid_notepad_br.svg SOFTMASK
-	c16 frames/hybrid_notepad_t.svg SOFTMASK
-	c16 frames/hybrid_notepad_b.svg SOFTMASK
-	c16 frames/hybrid_notepad_l.svg SOFTMASK
-	c16 frames/hybrid_notepad_r.svg SOFTMASK
-	c16 frames/hybrid_notepad_c.svg SOFTMASK
+	c16 frames/hybrid_notepad_t.svg SOFTMASK STRETCH
+	c16 frames/hybrid_notepad_b.svg SOFTMASK STRETCH
+	c16 frames/hybrid_notepad_l.svg SOFTMASK STRETCH
+	c16 frames/hybrid_notepad_r.svg SOFTMASK STRETCH
+	c16 frames/hybrid_notepad_c.svg SOFTMASK STRETCH
 END
 FRAME IID=QsnFrSetOptFoc
 	c16 frames/chrome_setoptfoc_tl.svg SOFTMASK
 	c16 frames/chrome_setoptfoc_tr.svg SOFTMASK
 	c16 frames/chrome_setoptfoc_bl.svg SOFTMASK
 	c16 frames/chrome_setoptfoc_br.svg SOFTMASK
-	c16 frames/chrome_setoptfoc_t.svg SOFTMASK
-	c16 frames/chrome_setoptfoc_b.svg SOFTMASK
-	c16 frames/chrome_setoptfoc_l.svg SOFTMASK
-	c16 frames/chrome_setoptfoc_r.svg SOFTMASK
-	c16 frames/chrome_setoptfoc_c.svg SOFTMASK
+	c16 frames/chrome_setoptfoc_t.svg SOFTMASK STRETCH
+	c16 frames/chrome_setoptfoc_b.svg SOFTMASK STRETCH
+	c16 frames/chrome_setoptfoc_l.svg SOFTMASK STRETCH
+	c16 frames/chrome_setoptfoc_r.svg SOFTMASK STRETCH
+	c16 frames/chrome_setoptfoc_c.svg SOFTMASK STRETCH
 END
 SCALABLEITEM IID=QsnBgAreaControl INPUT=none OUTPUT=0/RGBA
 	EFFECT UID=0x101F8748 INPUTA=none INPUTB=none OUTPUT=0/RGBA

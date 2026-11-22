@@ -118,7 +118,7 @@ def main():
                 if fn not in done:
                     open(os.path.join(OUT, os.path.basename(fn)), "w", newline=nl).write(svg(piece(p, st)))
                     done.add(fn)
-                lines.append(chr(9) + "c16 %s SOFTMASK" % fn)
+                lines.append(chr(9) + "c16 %s SOFTMASK%s" % (fn, " STRETCH" if p in ("t", "b", "l", "r", "c") else ""))   # sides and centre stretch to the area (ClearBlack II: Stretch|NBC)
             lines.append("END")
             inc.append(nl.join(lines))
         body = rect(0, 0, S, S, BAR["fill"], BAR["fo"]) + rect(0, 0, S, 1, BAR["edge"], BAR["eo"])
