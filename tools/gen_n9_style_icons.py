@@ -116,6 +116,10 @@ def glyph(name, d):
         circle(d, c - 15 * u, c - 10 * u, 6 * u)
         circle(d, c + 15 * u, c - 10 * u, 6 * u)
         d.arc([c - 26 * u, c - 16 * u, c + 26 * u, c + 30 * u], 20, 160, fill=WHITE, width=int(6 * u))
+    elif name == "files":                                    # a folder
+        d.rounded_rectangle([c - 44 * u, c - 28 * u, c - 8 * u, c - 10 * u], radius=6 * u, fill=WHITE)
+        d.rounded_rectangle([c - 44 * u, c - 20 * u, c + 44 * u, c + 36 * u], radius=9 * u, fill=WHITE)
+        d.rounded_rectangle([c - 44 * u, c - 4 * u, c + 44 * u, c + 36 * u], radius=9 * u, fill=(255, 255, 255, 210))
     elif name == "shell":                                    # a window
         d.rounded_rectangle([c - 42 * u, c - 34 * u, c + 42 * u, c + 34 * u], radius=8 * u, outline=WHITE, width=int(6 * u))
         d.line([(c - 42 * u, c - 14 * u), (c + 42 * u, c - 14 * u)], fill=WHITE, width=int(6 * u))
@@ -128,7 +132,7 @@ SPEC = {
     "menu": ((120, 140, 160), (60, 75, 95)), "logs": ((130, 200, 70), (50, 130, 30)), "voicemail": ((70, 200, 220), (20, 130, 160)),
     "profiles": ((130, 210, 50), (50, 130, 20)), "themes": ((200, 90, 220), (120, 30, 150)), "simservices": ((250, 150, 50), (200, 80, 10)),
     "speeddial": ((250, 200, 60), (210, 140, 10)), "images": ((160, 90, 230), (90, 30, 160)), "wlan": ((80, 160, 250), (30, 90, 200)),
-    "pebble": ((250, 120, 60), (200, 60, 20)), "shell": ((100, 130, 230), (40, 70, 170)),
+    "files": ((250, 170, 50), (210, 100, 10)), "pebble": ((250, 120, 60), (200, 60, 20)), "shell": ((100, 130, 230), (40, 70, 170)),
 }
 
 

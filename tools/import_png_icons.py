@@ -18,7 +18,7 @@ PICKS = {
     "browser": "jolla/z2.0/icons/icon-launcher-browser.png", "camera": "jolla/z2.0/icons/icon-launcher-camera.png",
     "calculator": "jolla/z2.0/icons/icon-launcher-calculator.png", "notes": "jolla/z2.0/icons/icon-launcher-notes.png",
     "terminal": "jolla/z2.0/icons/icon-launcher-shell.png", "catalogue": "jolla/z2.0/icons/icon-launcher-store.png",
-    "files": "native/256x256/apps/harbour-file-browser.png", "recorder": "native/256x256/apps/harbour-recorder.png",
+    "recorder": "native/256x256/apps/harbour-recorder.png",
     "radio": "native/256x256/apps/harbour-allradio.png", "podcasts": "native/256x256/apps/harbour-podcatcher.png",
     "search": "native/256x256/apps/harbour-searchnemo.png", "videos": "native/256x256/apps/harbour-videoPlayer.png",
     "eggtimer": "native/256x256/apps/harbour-slumber.png", "connections": "native/256x256/apps/harbour-networkinfo.png",
